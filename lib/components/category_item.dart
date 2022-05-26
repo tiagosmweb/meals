@@ -11,9 +11,11 @@ class CategoryItem extends StatelessWidget {
 
   void _selectedCategory(BuildContext context) {
     Navigator.of(context).push(
-      MaterialPageRoute(builder: (_) {
-        return CategoriesMealsScreen();
-      }),
+      MaterialPageRoute(
+        builder: (_) {
+          return CategoriesMealsScreen(category);
+        },
+      ),
     );
   }
 
