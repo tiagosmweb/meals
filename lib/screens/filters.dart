@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../components/main_drawer.dart';
 
 class FiltersScreen extends StatelessWidget {
   @override
@@ -7,6 +8,7 @@ class FiltersScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Filtros'),
       ),
+      drawer: MainDrawer(),
       body: Center(
         child: const Text('Filtros!'),
       ),
